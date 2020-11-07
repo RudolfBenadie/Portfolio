@@ -5,7 +5,7 @@ import {
   Switch
 } from "react-router-dom";
 import SideBar from "./SideBar";
-import NavBar from "./NavBar";
+import TopNav from "./TopNav";
 import routes from "../views/routes";
 
 const BaseLayout = (props) => {
@@ -15,7 +15,7 @@ const BaseLayout = (props) => {
     <div className="wrapper" >
       <SideBar {...props} routes={routes} />
       <div className="main-panel" ref={mainPanel}>
-        <NavBar {...props} />
+        <TopNav {...props} />
         <div id="baseContainer" >
           <Switch>
             {routes.map((prop, key) => {

@@ -30,9 +30,7 @@ const SideBar = (props) => {
                 <NavLink
                   href={prop.layout + prop.path}
                 >
-                  {/* <i className={prop.icon} /> */}
-                  {/* <FontAwesomeIcon icon={prop.icon} /> */}
-                  <span class="fa-li"><FontAwesomeIcon icon={prop.icon} /></span>
+                  <span className="fa-li"><FontAwesomeIcon icon={prop.icon} /></span>
                   <p>{prop.name}</p>
                 </NavLink>
               </li>
