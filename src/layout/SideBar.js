@@ -38,7 +38,6 @@ const SideBar = (props) => {
           })}
         </Nav>
       </div>
-
     </div>
   )
 }

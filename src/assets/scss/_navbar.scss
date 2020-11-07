@@ -9,7 +9,7 @@
   top: 0;
   right: 0;
   height: $large-navbar-height;
-  background-color: black;
+  background-color: $darkbackgroundcolor;
   color: $light-color;
 
   .container-fluid {
@@ -21,7 +21,7 @@
     }
 
     .content {
-      width: $content-width;
+      width: $content-width - 1;
       text-align: justify;
 
       .navbar-brand {

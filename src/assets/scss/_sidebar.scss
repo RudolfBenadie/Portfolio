@@ -9,17 +9,19 @@
   border-right: 1px solid $light-border;
   background-color: $darkbackgroundcolor;
   color: $light-color;
+  z-index: 1;
 
   .header {
     height: $large-navbar-height;
     vertical-align: middle;
-    align-items: center;
+    align-items: justify;
     display: flex;
-    background-color: black;
+    background-color: $darkbackgroundcolor;
     color: $light-color;
+    // border-bottom: 1px solid $dark-border;
 
     p {
-      margin: 0 auto;
+      margin: auto 0 auto 0.5em;
     }
   }
 
