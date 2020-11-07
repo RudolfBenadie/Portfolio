@@ -1,0 +1,20 @@
+#navbar {
+  position: fixed;
+  display: flex;
+  left: 0;
+  top: 0;
+  right: 0;
+  height: $large-navbar-height;
+  background-color: black;
+  color: $light-color;
+
+  .spacer {
+    width: $sidebar-width;
+  }
+
+  .content {
+    width: $content-width;
+    text-align: center;
+  }
+
+}
