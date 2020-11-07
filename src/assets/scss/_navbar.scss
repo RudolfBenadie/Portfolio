@@ -1,6 +1,10 @@
-#navbar {
+.navbar {
   position: fixed;
   display: flex;
+  flex-wrap: nowrap;
+  align-items: justify;
+  justify-content: space-between;
+  padding: 0;
   left: 0;
   top: 0;
   right: 0;
@@ -8,13 +12,22 @@
   background-color: black;
   color: $light-color;
 
-  .spacer {
-    width: $sidebar-width;
-  }
+  .container-fluid {
+    padding: 0;
 
-  .content {
-    width: $content-width;
-    text-align: center;
-  }
+    .spacer {
+      width: $sidebar-width;
+      height: $large-navbar-height;
+    }
 
+    .content {
+      width: $content-width;
+      text-align: justify;
+
+      .navbar-brand {
+        color: $light-color;
+        padding-left: 2em;
+      }
+    }
+  }
 }
