@@ -7,7 +7,7 @@ import {
   Table
 } from "reactstrap";
 
-const ContactDetails = (props) => {
+const ContactDetailsWidget = (props) => {
   return (
     <Card className="widget granite smaller-font">
       <CardHeader>
@@ -18,9 +18,6 @@ const ContactDetails = (props) => {
       <CardBody className="no-padding" >
         <Table hover responsive size="sm" >
           <tbody>
-            <tr>
-              <td className="label">Name:</td><td className="data">Rudolf Johannes Benadie</td>
-            </tr>
             <tr>
               <td className="label">Address:</td><td className="data">36A Northmere Road</td>
             </tr>
@@ -38,18 +35,10 @@ const ContactDetails = (props) => {
           </tr>
           </tbody>
         </Table>
-      {/* <div>
-          <p><span className="label">Name:</span><span className="data">Rudolf Johannes Benadie</span></p>
-          <p><span className="label">Address:</span><span className="data">36A Northmere road</span></p>
-          <p><span className="label"></span><span className="data">Poole</span></p>
-          <p><span className="label"></span><span className="data">BH12 4DY</span></p>
-          <p><span className="label">Mobile:</span><span className="data">+44 78 578 29084</span></p>
-          <p><span className="label">Email:</span><span className="data">rudolf.benadie@outlook.com</span></p>
-        </div> */}
       </CardBody>
     </Card >
   )
 }
 
-export default ContactDetails;
+export default ContactDetailsWidget;
 
