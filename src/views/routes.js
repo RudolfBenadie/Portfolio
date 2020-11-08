@@ -1,20 +1,33 @@
 import Dashboard from "./dashboard";
 import Biography from "./biography";
+import Skills from "./skills";
 
 const routes = [
   {
-    path: "/dashboard",
-    name: "Dashboard",
-    icon: "tachometer-alt",
     component: Dashboard,
-    layout: "/terminal"
+    icon: "tachometer-alt",
+    layout: "/terminal",
+    name: "Dashboard",
+    path: "/dashboard",
+    type: "link"
   },
   {
-    path: "/biography",
-    name: "Biography",
-    icon: "user",
     component: Biography,
-    layout: "/terminal"
+    icon: "user",
+    layout: "/terminal",
+    name: "Biography",
+    path: "/biography",
+    type: "collapsable",
+    routes: [
+      {
+        component: Skills,
+        icon: "cog",
+        layout: "/terminal/biography",
+        name: "Skills",
+        path: "/skills",
+        type: "link"
+      }
+    ]
   }
 ];
 

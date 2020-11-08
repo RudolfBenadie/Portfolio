@@ -1,40 +1,20 @@
-import React, { useRef } from "react";
+import React from "react";
 import {
-  Nav,
-  NavLink
+  Nav
 } from "reactstrap";
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import RouteMenuItem from "../components/routeMenuItem";
 
 const SideBar = (props) => {
-  function activeRoute(routeName) {
-    return props.location && props.location.pathname.indexOf(routeName) > -1 ? "active" : "";
-  }
-  const sidebar = useRef();
   return (
     <div id="sidebar" className="sidebar">
       <div className="header">
         <p>Choose an option:</p>
       </div>
 
-      <div className="sidebar-wrapper" ref={sidebar}>
+      <div className="sidebar-wrapper" >
         <Nav className="fa-ul" >
           {props.routes.map((prop, key) => {
-            return (
-              <li
-                className={
-                  activeRoute(prop.path) +
-                  (prop.pro ? " active-pro" : "")
-                }
-                key={key}
-              >
-                <NavLink
-                  href={prop.layout + prop.path}
-                >
-                  <span className="fa-li"><FontAwesomeIcon icon={prop.icon} /></span>
-                  <p>{prop.name}</p>
-                </NavLink>
-              </li>
-            );
+            return (<RouteMenuItem {...prop} key={key} />);
           })}
         </Nav>
       </div>

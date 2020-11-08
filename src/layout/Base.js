@@ -9,12 +9,11 @@ import TopNav from "./TopNav";
 import routes from "../views/routes";
 
 const BaseLayout = (props) => {
-  const mainPanel = useRef(null);
   if (!props.currentUser) return <Redirect to="/auth" />
   return (
     <div className="wrapper" >
       <SideBar {...props} routes={routes} />
-      <div className="main-panel" ref={mainPanel}>
+      <div className="main-panel">
         <TopNav {...props} />
         <div id="baseContainer" >
           <Switch>
