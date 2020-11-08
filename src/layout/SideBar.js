@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useRef } from "react";
 import {
   Nav,
   NavLink
@@ -9,7 +9,7 @@ const SideBar = (props) => {
   function activeRoute(routeName) {
     return props.location && props.location.pathname.indexOf(routeName) > -1 ? "active" : "";
   }
-  var sidebar = React.createRef();
+  const sidebar = useRef();
   return (
     <div id="sidebar" className="sidebar">
       <div className="header">

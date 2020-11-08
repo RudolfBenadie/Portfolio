@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useRef } from "react";
 import {
   Redirect,
   Route,
@@ -9,7 +9,7 @@ import TopNav from "./TopNav";
 import routes from "../views/routes";
 
 const BaseLayout = (props) => {
-  var mainPanel = React.createRef();
+  const mainPanel = useRef(null);
   if (!props.currentUser) return <Redirect to="/auth" />
   return (
     <div className="wrapper" >
