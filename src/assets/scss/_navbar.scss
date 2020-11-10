@@ -1,17 +1,49 @@
 .navbar {
-  position: fixed;
   display: flex;
   flex-wrap: nowrap;
   align-items: justify;
   justify-content: space-between;
   padding: 0;
-  left: 0;
   top: 0;
   right: 0;
   height: $large-navbar-height;
   background-color: $darkbackgroundcolor;
   color: $light-color;
 
+  .navbar-wrapper {
+    display: inline-flex;
+    align-items: center;
+
+    .navbar-brand {
+      color: $primary-color;
+    }
+
+    a:not([href]) {
+      text-decoration: none;
+      cursor: default;
+    }
+
+    .navbar-minimize {
+      padding-right: 10px;
+
+      .btn {
+        margin: 0;
+      }
+    }
+
+    .navbar-toggle {
+      .navbar-toggler {
+        padding-left: 0;
+      }
+
+      &:hover {
+        & .navbar-toggler-bar.bar2 {
+          width: 22px;
+        }
+      }
+    }
+  }
+  
   .container-fluid {
     padding: 0;
 
@@ -30,4 +62,33 @@
       }
     }
   }
+}
+
+.profile-info {
+  list-style: none;
+  display: inline-block;
+
+  a,
+  a:hover,
+  a:visited,
+  a:active {
+    color: $primary-color;
+  }
+}
+
+div.profile-dropdown.dropdown-menu.show {
+  padding: 0;
+  width: 300px !important;
+  border: 2px solid $dark-border;
+  box-shadow: 3px 3px 7px 1px $primary-color;
+  border-radius: 10px;
+
+  .card {
+    border-radius: 10px;
+  }
+}
+
+.profile-dropdown table {
+  margin-left: 10px;
+  border-radius: 10px;
 }
