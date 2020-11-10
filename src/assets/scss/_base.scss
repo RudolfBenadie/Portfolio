@@ -1,13 +1,13 @@
-#baseContainer {
+.main-panel {
   height: 100vh;
   width: $content-width;
   background-color: $lightbackgroundcolor;
   float: right;
+  overflow: hidden;
 
   .content {
     width: 100%;
     height: 100%;
-    padding-top: $large-navbar-height;
 
     .view{
       padding: 1em;
@@ -15,7 +15,7 @@
   }
 }
 
-.main-panel{
-  overflow: hidden;
-}
+// .main-panel{
+//   overflow: hidden;
+// }
 

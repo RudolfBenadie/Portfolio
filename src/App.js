@@ -2,8 +2,8 @@ import "./App.css";
 import "bootstrap/dist/css/bootstrap.css"
 import "./assets/scss/main.scss";
 import { BrowserRouter, Redirect, Route, Switch } from "react-router-dom";
-import BaseLayout from "./layout/Base";
-import AuthLayout from "./layout/Auth";
+import BaseLayout from "./layout/base";
+import AuthLayout from "./layout/auth";
 import { library } from '@fortawesome/fontawesome-svg-core';
 import { fab } from '@fortawesome/free-brands-svg-icons';
 import {

@@ -9,32 +9,34 @@ import {
 
 const Skills = (props) => {
   return (
-    <>
-      <Row>
-        <Col>
-          <Card>
-            <CardHeader>
-              Product Owner
+    <div id="skills" className="content" >
+      <div className="view">
+        <Row>
+          <Col>
+            <Card>
+              <CardHeader>
+                Product Owner
             </CardHeader>
-            <CardBody>
+              <CardBody>
 
-            </CardBody>
-          </Card>
-        </Col>
-      </Row>
-      <Row>
-        <Col>
-          <Card>
-            <CardHeader>
-              Developer
+              </CardBody>
+            </Card>
+          </Col>
+        </Row>
+        <Row>
+          <Col>
+            <Card>
+              <CardHeader>
+                Developer
             </CardHeader>
-            <CardBody>
-              
-            </CardBody>
-          </Card>
-        </Col>
-      </Row>
-    </>
+              <CardBody>
+
+              </CardBody>
+            </Card>
+          </Col>
+        </Row>
+      </div>
+    </div>
   )
 }
 

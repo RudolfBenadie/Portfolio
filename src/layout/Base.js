@@ -1,33 +1,50 @@
-import React, { useRef } from "react";
+import React from "react";
 import {
   Redirect,
   Route,
   Switch
 } from "react-router-dom";
-import SideBar from "./SideBar";
-import TopNav from "./TopNav";
-import routes from "../views/routes";
+import SideBar from "./sideBar";
+import TopNav from "./topNav";
+import MainRoutes from "../routes/mainRoutes";
+import BiographyRoutes from "../routes/biographyRoutes";
 
 const BaseLayout = (props) => {
   if (!props.currentUser) return <Redirect to="/auth" />
   return (
     <div className="wrapper" >
-      <SideBar {...props} routes={routes} />
+      <SideBar
+        {...props}
+        mainRoutes={MainRoutes}
+        biographyRoutes={BiographyRoutes}
+      />
       <div className="main-panel">
-        <TopNav {...props} />
-        <div id="baseContainer" >
-          <Switch>
-            {routes.map((prop, key) => {
-              return (
-                <Route
-                  path={prop.layout + prop.path}
-                  component={prop.component}
-                  key={key}
-                />
-              );
-            })}
-          </Switch>
-        </div>
+        <TopNav
+          {...props}
+          mainRoutes={MainRoutes}
+          biographyRoutes={BiographyRoutes}
+        />          
+        <Switch>
+          {MainRoutes.map((prop, key) => {
+            return (
+              <Route
+                exact
+                path={prop.layout + prop.path}
+                component={prop.component}
+                key={key}
+              />
+            );
+          })}
+          {BiographyRoutes.map((prop, key) => {
+            return (
+              <Route
+                path={prop.layout + prop.path}
+                component={prop.component}
+                key={MainRoutes.length + key}
+              />
+            );
+          })}
+        </Switch>
       </div>
     </div>
   )
