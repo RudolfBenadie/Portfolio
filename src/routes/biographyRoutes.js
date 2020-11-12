@@ -7,7 +7,7 @@ const BiographyRoutes = [
     layout: "/terminal",
     name: "Personal information",
     path: "/personaldetails"
-  }
+  },
   {
     component: OnlinePresence,
     icon: "user",
