@@ -1,4 +1,5 @@
-import Skills from "../views/skills";
+import PersonalDetails from "../views/personalDetails";
+import OnlinePresence from "../views/onlinePresence";
 
 const BiographyRoutes = [
   {
@@ -10,7 +11,7 @@ const BiographyRoutes = [
   },
   {
     component: OnlinePresence,
-    icon: "user",
+    icon: "share",
     layout: "/terminal",
     name: "Online presence",
     path: "/onlinepresence"

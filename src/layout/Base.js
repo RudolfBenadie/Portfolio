@@ -8,6 +8,7 @@ import SideBar from "./sideBar";
 import TopNav from "./topNav";
 import MainRoutes from "../routes/mainRoutes";
 import BiographyRoutes from "../routes/biographyRoutes";
+import ProfessionalRoutes from "../routes/professionalRoutes";
 
 const BaseLayout = (props) => {
   if (!props.currentUser) return <Redirect to="/auth" />
@@ -17,12 +18,14 @@ const BaseLayout = (props) => {
         {...props}
         mainRoutes={MainRoutes}
         biographyRoutes={BiographyRoutes}
+        professionalRoutes={ProfessionalRoutes}
       />
       <div className="main-panel">
         <TopNav
           {...props}
           mainRoutes={MainRoutes}
           biographyRoutes={BiographyRoutes}
+          professionalRoutes={ProfessionalRoutes}
         />          
         <Switch>
           {MainRoutes.map((prop, key) => {
