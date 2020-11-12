@@ -1,5 +1,10 @@
 .card {
   margin-bottom: 2%;
+  height: 100%;
+
+  .card-header{
+    background-color: $lightbackgroundcolor-transparent;
+  }
 
   .card-body {
     table {

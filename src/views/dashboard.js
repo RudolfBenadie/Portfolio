@@ -1,20 +1,18 @@
 import React from "react";
 import { Col, Row } from "reactstrap";
-import TitleWidget from "../widgets/titleWidget";
-import ContactDetailsWidget from "../widgets/contactDetailsWidget";
+import EmploymentStatus from "../widgets/employmentStatusWidget";
+import CurrentLocationWidget from "../widgets/currentLocationWidget";
 
 const Dashboard = (props) => {
   return (
     <div id="dashboard" className="content" >
       <div className="view">
         <Row>
-          <Col lg="12" md="12" sm="12" >
-            <TitleWidget />
+          <Col lg="6" md="6" sm="12" >
+            <EmploymentStatus />
           </Col>
-        </Row>
-        <Row>
-          <Col sm="12" md="6" lg="6">
-            <ContactDetailsWidget />
+          <Col lg="6" md="6" sm="12" >
+            <CurrentLocationWidget />
           </Col>
         </Row>
       </div>

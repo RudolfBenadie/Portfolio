@@ -43,23 +43,13 @@
       }
     }
   }
-  
+
   .container-fluid {
     padding: 0;
 
-    .spacer {
-      width: $sidebar-width;
-      height: $large-navbar-height;
-    }
-
-    .content {
-      width: $content-width - 1;
-      text-align: justify;
-
-      .navbar-brand {
-        color: $light-color;
-        padding-left: 2em;
-      }
+    .navbar-brand {
+      color: $light-color;
+      padding-left: 2em;
     }
   }
 }
@@ -67,12 +57,13 @@
 .profile-info {
   list-style: none;
   display: inline-block;
+  color: $light-color;
 
   a,
   a:hover,
   a:visited,
   a:active {
-    color: $primary-color;
+    color: $light-color;
   }
 }
 
