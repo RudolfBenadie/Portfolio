@@ -17,7 +17,7 @@ const SideBar = (props) => {
   return (
     <div id="sidebar" className="sidebar">
       <div className="header">
-        <p>Choose an option:</p>
+        <h5 style={{margin: 'auto'}} >RJ BENADIE</h5>
       </div>
       <div className="sidebar-wrapper" >
         <Nav className="fa-ul">
