@@ -2,11 +2,18 @@ import Skills from "../views/skills";
 
 const BiographyRoutes = [
   {
-    component: Skills,
-    icon: "cog",
+    component: PersonalDetails,
+    icon: "user",
     layout: "/terminal",
-    name: "Skills",
-    path: "/skills"
+    name: "Personal information",
+    path: "/personaldetails"
+  }
+  {
+    component: OnlinePresence,
+    icon: "user",
+    layout: "/terminal",
+    name: "Online presence",
+    path: "/onlinepresence"
   }
 ];
 
