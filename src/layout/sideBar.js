@@ -17,7 +17,7 @@ const SideBar = (props) => {
   return (
     <div id="sidebar" className="sidebar">
       <div className="header">
-        <h5 style={{margin: 'auto'}} >RJ BENADIE</h5>
+        <h5 style={{ margin: 'auto' }} >RJ BENADIE</h5>
       </div>
       <div className="sidebar-wrapper" >
         <Nav className="fa-ul">
@@ -51,6 +51,36 @@ const SideBar = (props) => {
               </Link>
               <UncontrolledCollapse toggler="#biographyToggler" >
                 {props.biographyRoutes.map((prop, key) => {
+                  return (
+                    <li
+                      className={
+                        activeRoute(prop.path) +
+                        (prop.pro ? " active-pro" : "") + " collapse-menu-item"
+                      }
+                      key={key}
+                    >
+                      <NavLink
+                        to={prop.query ? prop.layout + prop.path + prop.query : prop.layout + prop.path}
+                        className="nav-link"
+                        activeClassName="active"
+                      >
+                        <FontAwesomeIcon icon={prop.icon} className="submenu-icon" />
+                        <p>{prop.name}</p>
+                      </NavLink>
+                    </li>
+                  );
+                })}
+              </UncontrolledCollapse>
+            </Nav>
+          </li>
+
+          <li>
+            <Nav className="submenu" >
+              <Link to="#" color="primary" id="professionalToggler" className="nav-link with-down-caret" >
+                Professional
+              </Link>
+              <UncontrolledCollapse toggler="#professionalToggler" >
+                {props.professionalRoutes.map((prop, key) => {
                   return (
                     <li
                       className={
