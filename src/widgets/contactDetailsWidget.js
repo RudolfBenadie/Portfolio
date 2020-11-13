@@ -12,7 +12,7 @@ const ContactDetailsWidget = (props) => {
     <Card className="widget granite smaller-font">
       <CardHeader>
         <Container fluid>
-          <h2>Contact details</h2>
+        <p className="card-header-text" >Contact details</p>
         </Container>
       </CardHeader>
       <CardBody className="no-padding" >

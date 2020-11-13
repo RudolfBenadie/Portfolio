@@ -1,5 +1,8 @@
 import React from "react";
-import { Col, Row } from "reactstrap";
+import { 
+  Col, 
+  Row 
+} from "reactstrap";
 import EmploymentStatus from "../widgets/employmentStatusWidget";
 import CurrentLocationWidget from "../widgets/currentLocationWidget";
 
@@ -8,10 +11,10 @@ const Dashboard = (props) => {
     <div id="dashboard" className="content" >
       <div className="view">
         <Row>
-          <Col lg="6" md="6" sm="12" >
+          <Col lg="6" md="6" sm="12" className="card-holder" >
             <EmploymentStatus />
           </Col>
-          <Col lg="6" md="6" sm="12" >
+          <Col lg="6" md="6" sm="12" className="card-holder" >
             <CurrentLocationWidget />
           </Col>
         </Row>

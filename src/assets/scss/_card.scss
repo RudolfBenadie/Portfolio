@@ -1,8 +1,12 @@
+.card-holder {
+  margin-bottom: 0.75em;
+}
+
 .card {
   margin-bottom: 2%;
   height: 100%;
 
-  .card-header{
+  .card-header {
     background-color: $lightbackgroundcolor-transparent;
   }
 

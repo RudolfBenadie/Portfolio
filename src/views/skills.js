@@ -1,38 +1,23 @@
 import React from "react";
 import {
-  Card,
-  CardBody,
-  CardHeader,
   Col,
   Row
-} from "reactstrap"
+} from "reactstrap";
+import ProductOwnerSkillsWidget from "../widgets/productOwnerSkillsWidget";
+import SoftwareDevelopmentSkillsWidget from "../widgets/softwareDevelopmentSkillsWidget";
 
 const Skills = (props) => {
   return (
     <div id="skills" className="content" >
       <div className="view">
         <Row>
-          <Col>
-            <Card>
-              <CardHeader>
-                Product Owner
-            </CardHeader>
-              <CardBody>
-
-              </CardBody>
-            </Card>
+          <Col lg="12" md="12" sm="12" className="card-holder" >
+            <ProductOwnerSkillsWidget />
           </Col>
         </Row>
         <Row>
-          <Col>
-            <Card>
-              <CardHeader>
-                Developer
-            </CardHeader>
-              <CardBody>
-
-              </CardBody>
-            </Card>
+          <Col lg="12" md="12" sm="12" className="card-holder" >
+          <SoftwareDevelopmentSkillsWidget />
           </Col>
         </Row>
       </div>

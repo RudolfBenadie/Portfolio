@@ -47,6 +47,15 @@ const BaseLayout = (props) => {
               />
             );
           })}
+          {ProfessionalRoutes.map((prop, key) => {
+            return (
+              <Route
+                path={prop.layout + prop.path}
+                component={prop.component}
+                key={MainRoutes.length + key}
+              />
+            );
+          })}
         </Switch>
       </div>
     </div>
