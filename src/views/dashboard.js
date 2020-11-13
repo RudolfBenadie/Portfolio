@@ -8,10 +8,10 @@ const Dashboard = (props) => {
     <div id="dashboard" className="content" >
       <div className="view">
         <Row>
-          <Col lg="6" md="6" sm="12" >
+          <Col lg="6" md="6" sm="12" className="card-holder" >
             <EmploymentStatus />
           </Col>
-          <Col lg="6" md="6" sm="12" >
+          <Col lg="6" md="6" sm="12" className="card-holder" >
             <CurrentLocationWidget />
           </Col>
         </Row>
