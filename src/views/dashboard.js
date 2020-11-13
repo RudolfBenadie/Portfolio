@@ -1,5 +1,8 @@
 import React from "react";
-import { Col, Row } from "reactstrap";
+import { 
+  Col, 
+  Row 
+} from "reactstrap";
 import EmploymentStatus from "../widgets/employmentStatusWidget";
 import CurrentLocationWidget from "../widgets/currentLocationWidget";
 

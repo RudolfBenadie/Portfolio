@@ -9,7 +9,7 @@ const TitleWidget = (props) => {
   return (
     <Card>
       <CardHeader>
-        <h2>Name</h2>
+      <p className="card-header-text" >Name</p>
       </CardHeader>
       <CardBody>
         <p>Rudolf Johannes Benadie</p>

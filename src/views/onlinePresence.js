@@ -9,6 +9,7 @@ import {
 } from "reactstrap";
 import linkedinIcon from "../assets/images/linkedin.svg";
 import twitterIcon from "../assets/images/Twitter_Social_Icon_Rounded_Square_Color.svg";
+import githubIcon from "../assets/images/GitHub-Mark-64px.png";
 
 const OnlinePresence = (props) => {
   return(
@@ -21,11 +22,14 @@ const OnlinePresence = (props) => {
               <p className="card-header-text" >Social media</p>
               </CardHeader>
               <CardBody>
-                <CardLink href="www.linkedin.com/in/rudolf-benadie-47a85a80">
-                  <img className="social-media-icon" src={linkedinIcon} alt="Social media LinkedIn" target="blank" />
+                <CardLink href="https://www.linkedin.com/in/rudolf-benadie-47a85a80" target="blank" >
+                  <img className="social-media-icon" src={linkedinIcon} alt="Social media LinkedIn"/>
                 </CardLink>
-                <CardLink href="https://twitter.com/RudolfB">
-                  <img className="social-media-icon" src={twitterIcon} alt="Social media Twitter" target="blank" />
+                <CardLink href="https://twitter.com/RudolfB"  target="blank">
+                  <img className="social-media-icon" src={twitterIcon} alt="Social media Twitter" />
+                </CardLink>
+                <CardLink href="https://github.com/RudolfBenadie" target="blank" >
+                  <img className="social-media-icon" src={githubIcon} alt="Social media GitHub"/>
                 </CardLink>
               </CardBody>
             </Card>
