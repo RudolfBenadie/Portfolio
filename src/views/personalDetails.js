@@ -14,10 +14,10 @@ const PersonalDetails = (props) => {
     <div id="personal-details" className="content" >
       <div className="view">
         <Row>
-          <Col className="card-holder">
+          <Col lg="12" md="12" sm="12" className="card-holder">
             <Card className="granite" >
               <CardHeader>
-              <p className="card-header-text" >Personal data</p>
+                <p className="card-header-text" >Personal data</p>
               </CardHeader>
               <CardBody>
                 <Table responsive hover size="sm">
@@ -61,10 +61,10 @@ const PersonalDetails = (props) => {
           </Col>
         </Row>
         <Row>
-          <Col>
+          <Col lg="12" md="12" sm="12" className="card-holder" >
             <Card className="granite">
               <CardHeader>
-              <p className="card-header-text" >Residence</p>
+                <p className="card-header-text" >Residence</p>
               </CardHeader>
               <CardBody>
                 <address>36a Northmere Road</address>

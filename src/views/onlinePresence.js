@@ -12,24 +12,24 @@ import twitterIcon from "../assets/images/Twitter_Social_Icon_Rounded_Square_Col
 import githubIcon from "../assets/images/GitHub-Mark-64px.png";
 
 const OnlinePresence = (props) => {
-  return(
+  return (
     <div id="online-presence" className="content" >
       <div className="view">
         <Row>
-          <Col>
-            <Card>
+          <Col lg="6" md="6" sm="12" className="card-holder">
+            <Card className="granite" >
               <CardHeader>
-              <p className="card-header-text" >Social media</p>
+                <p className="card-header-text" >Social media</p>
               </CardHeader>
               <CardBody>
                 <CardLink href="https://www.linkedin.com/in/rudolf-benadie-47a85a80" target="blank" >
-                  <img className="social-media-icon" src={linkedinIcon} alt="Social media LinkedIn"/>
+                  <img className="social-media-icon" src={linkedinIcon} alt="Social media LinkedIn" />
                 </CardLink>
-                <CardLink href="https://twitter.com/RudolfB"  target="blank">
+                <CardLink href="https://twitter.com/RudolfB" target="blank">
                   <img className="social-media-icon" src={twitterIcon} alt="Social media Twitter" />
                 </CardLink>
                 <CardLink href="https://github.com/RudolfBenadie" target="blank" >
-                  <img className="social-media-icon" src={githubIcon} alt="Social media GitHub"/>
+                  <img className="social-media-icon" src={githubIcon} alt="Social media GitHub" />
                 </CardLink>
               </CardBody>
             </Card>
