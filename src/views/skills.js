@@ -5,6 +5,7 @@ import {
 } from "reactstrap";
 import ProductOwnerSkillsWidget from "../widgets/productOwnerSkillsWidget";
 import SoftwareDevelopmentSkillsWidget from "../widgets/softwareDevelopmentSkillsWidget";
+import EducationWidget from "../widget/educationWidget";
 
 const Skills = (props) => {
   return (
@@ -20,6 +21,7 @@ const Skills = (props) => {
           <SoftwareDevelopmentSkillsWidget />
           </Col>
         </Row>
+        <EducationWidget />
       </div>
     </div>
   )
