@@ -209,16 +209,18 @@ const EmploymenyHistory = (props) => {
           <Col className="card-holder">
             <Card className="granite">
               <CardHeader>
-                <p className="card-header-text" ></p>
+                <p className="card-header-text" >Farm Hand, ​Jan 2001 - Apr 2001</p>
               </CardHeader>
               <CardBody>
-                <h5></h5>
+                <h5>De Gournay - ​Penshurst</h5>
                 <ul>
-                  <li className="data" ></li>
-                  <li className="data" ></li>
-                  <li className="data" ></li>
-                  <li className="data" ></li>
-                  <li className="data" ></li>
+                  <li className="data" >Operated farm equipment such as tractors and trucks with extreme care and precision</li>
+                  <li className="data" >Checked farmland for issues in need of attention, such as fences to mend and broken pipes to fix</li>
+                  <li className="data" >Assisted farmers with feeding and watering sheep</li>
+                  <li className="data" >Observed animals and notified the vet of any signs of illness</li>
+                  <li className="data" >Repaired established lawns using seed mixtures and fertilizers recommended for particular soil type and lawn location, mow and maintain lawns</li>
+                  <li className="data" >Deweeding herbaceous borders, trimming hedges</li>
+                  <li className="data" >General maintenance of buildings and fixtures</li>
                 </ul>
               </CardBody>
             </Card>
@@ -226,52 +228,17 @@ const EmploymenyHistory = (props) => {
           <Col className="card-holder">
             <Card className="granite">
               <CardHeader>
-                <p className="card-header-text" ></p>
+                <p className="card-header-text" >Software Developer, ​Oct 1999 - Dec 2000</p>
               </CardHeader>
               <CardBody>
-                <h5></h5>
+                <h5>partsource.co.za - ​Cape Town</h5>
                 <ul>
-                  <li className="data" ></li>
-                  <li className="data" ></li>
-                  <li className="data" ></li>
-                  <li className="data" ></li>
-                  <li className="data" ></li>
-                </ul>
-              </CardBody>
-            </Card>
-          </Col>
-        </Row>
-        <Row>
-          <Col className="card-holder">
-            <Card className="granite">
-              <CardHeader>
-                <p className="card-header-text" ></p>
-              </CardHeader>
-              <CardBody>
-                <h5></h5>
-                <ul>
-                  <li className="data" ></li>
-                  <li className="data" ></li>
-                  <li className="data" ></li>
-                  <li className="data" ></li>
-                  <li className="data" ></li>
-                </ul>
-              </CardBody>
-            </Card>
-          </Col>
-          <Col className="card-holder">
-            <Card className="granite">
-              <CardHeader>
-                <p className="card-header-text" ></p>
-              </CardHeader>
-              <CardBody>
-                <h5></h5>
-                <ul>
-                  <li className="data" ></li>
-                  <li className="data" ></li>
-                  <li className="data" ></li>
-                  <li className="data" ></li>
-                  <li className="data" ></li>
+                  <li className="data" >Debugged and modified Delphi Web Application software components</li>
+                  <li className="data" >Develop web applications in Delphi for the automotive industry</li>
+                  <li className="data" >Reviewed client expectations and project parameters and suggested software packages that met requirements</li>
+                  <li className="data" >Modified existing software to correct errors, adapt to new hardware and improve performance</li>
+                  <li className="data" >Worked closely with clients to establish problem specifications and system designs</li>
+                  <li className="data" >Developed code fixes and enhancements for inclusion in future code releases and patches</li>
                 </ul>
               </CardBody>
             </Card>
@@ -281,16 +248,18 @@ const EmploymenyHistory = (props) => {
           <Col className="card-holder">
             <Card className="granite">
               <CardHeader>
-                <p className="card-header-text" ></p>
+                <p className="card-header-text" >General Manager, ​Sep 1997 - Sep 1999</p>
               </CardHeader>
               <CardBody>
-                <h5></h5>
+                <h5>Danville Liquor Store - ​Pretoria</h5>
                 <ul>
-                  <li className="data" ></li>
-                  <li className="data" ></li>
-                  <li className="data" ></li>
-                  <li className="data" ></li>
-                  <li className="data" ></li>
+                  <li className="data" >Tracked and analyzed profitability and key metrics of Liquor Store to improve overall profitability and bring in new clientele</li>
+                  <li className="data" >Devised, deployed and monitored promotional approaches to boost long-term business success with optimal sales and profit levels</li>
+                  <li className="data" >Managed all purchasing, sales, marketing and customer account operations to ensure efficiency and performance</li>
+                  <li className="data" >Increased profitability by coordinating consistent floor merchandise plan changes to drive sales</li>
+                  <li className="data" >Conducted ongoing supplier evaluations to assess quality, timeliness and compliance of deliveries, maintaining tight cost controls and maximizing business operational efficiency</li>
+                  <li className="data" >Rotated merchandise and displays to feature new products and promotions</li>
+                  <li className="data" >Supported regulatory compliance by overseeing all audits to ensure adherence to protocol</li>
                 </ul>
               </CardBody>
             </Card>
@@ -298,16 +267,47 @@ const EmploymenyHistory = (props) => {
           <Col className="card-holder">
             <Card className="granite">
               <CardHeader>
-                <p className="card-header-text" ></p>
+                <p className="card-header-text" >Farm Manager, ​Aug 1996 - Aug 1997</p>
               </CardHeader>
               <CardBody>
-                <h5></h5>
+                <h5>Family farm - ​Levubu</h5>
                 <ul>
-                  <li className="data" ></li>
-                  <li className="data" ></li>
-                  <li className="data" ></li>
-                  <li className="data" ></li>
-                  <li className="data" ></li>
+                  <li className="data" >Led a team of 30 semi-skilled and unskilled farm personnel</li>
+                  <li className="data" >Checked farmland for issues in need of attention, such as fences to mend and broken pipes to fix</li>
+                  <li className="data" >Developed advanced understanding of subtropical fruit farm operations (banana, avocado, mango, nuts), including purchasing needs and labor requirements</li>
+                  <li className="data" >Calculate and formulate fertilisation and irrigation requirements of orchards</li>
+                  <li className="data" >Purchased supplies such as seeds, pesticides and fertilizer</li>
+                  <li className="data" >Drafted the annual budget and monitored expenditures</li>
+                  <li className="data" >Deforestation and preparation of unused land for establishment of new orchards. Establish new orchards to expand farming operations</li>
+                  <li className="data" >General orchard housekeeping and plant maintenance</li>
+                  <li className="data" >Operate farming equipment like tractors and trucks</li>
+                  <li className="data" >Training of new staff in farming procedures</li>
+                  <li className="data" >General human resource management</li>
+                  <li className="data" >General accounting and financial reporting</li>
+                  <li className="data" >Development of processes and procedures for optimal farming operations</li>
+                </ul>
+              </CardBody>
+            </Card>
+          </Col>
+        </Row>
+        <Row>
+          <Col className="card-holder">
+            <Card className="granite">
+              <CardHeader>
+                <p className="card-header-text" >Firefighter/Paramedic, ​Feb 1992 - Jul 1996</p>
+              </CardHeader>
+              <CardBody>
+                <h5>Pietersburg Municipality - ​Pietersburg</h5>
+                <ul>
+                  <li className="data" >Inspect commercial buildings for compliance with fire and safety regulations</li>
+                  <li className="data" >Approval of building plans according to fire and safety regulations</li>
+                  <li className="data" >Maintenance and operation of fire- and emergency vehicles</li>
+                  <li className="data" >Firefighting duties as and when required. Secure scene, locate water source and procure water supply, manning pumps and extinguishing fires. Assessment of scene and clean up after the scene has been secured and made safe</li>
+                  <li className="data" >Ambulance duties as and when required, triage, accident scene first aid, stabilize patients on scene, transport patients to hospital. Long distance inter hospital transfer of patients. Transport elderly patients from old age homes to the hospital and back</li>
+                  <li className="data" >Produced ad hoc reports and documents for senior team members on a weekly basis</li>
+                  <li className="data" >Responded to customer requests via telephone and email and effectively answered questions and inquiries</li>
+                  <li className="data" >Public education in general fire safety</li>
+                  <li className="data" >Design and develop report automation tool using Microsoft Office for fire safety reporting process</li>
                 </ul>
               </CardBody>
             </Card>
