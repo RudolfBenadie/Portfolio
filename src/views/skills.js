@@ -5,7 +5,7 @@ import {
 } from "reactstrap";
 import ProductOwnerSkillsWidget from "../widgets/productOwnerSkillsWidget";
 import SoftwareDevelopmentSkillsWidget from "../widgets/softwareDevelopmentSkillsWidget";
-import EducationWidget from "../widget/educationWidget";
+import EducationWidget from "../widgets/educationWidget";
 
 const Skills = (props) => {
   return (
